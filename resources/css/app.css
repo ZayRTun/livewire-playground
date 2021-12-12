@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { display: none !important; }
+
+/* .trix-button-group--file-tools {
+    display: none !important;
+} */
+
+
+.post-body figure {
+	@apply hidden;
+}
+
+.post-body figure figcaption {
+	@apply hidden;
+}
+
+.post-body > div {
+	@apply text-gray-500 line-clamp-3;
+}
+
+.post-body > *:nth-child(n + 2) {
+	@apply hidden;
+}
+
+.post-body a {
+	@apply text-indigo-600 hover:text-indigo-500;
+}
